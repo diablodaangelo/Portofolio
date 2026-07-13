@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pajar Ramdani | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-left">
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <nav class="header-nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#projects" class="nav-link active">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-right">
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="id">ID</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-text">Admin Panel</div>
+            <div class="brand-sub">Portfolio Manager</div>
+        </div>
+        <div class="sidebar-nav">
+            <a href="#home" class="active"><span class="icon">◆</span> Home</a>
+            <a href="#about"><span class="icon">◎</span> About</a>
+            <a href="#skills"><span class="icon">◈</span> Skills</a>
+            <a href="#education"><span class="icon">◉</span> Education</a>
+            <a href="#projects"><span class="icon">⊞</span> Projects</a>
+            <a href="#contact"><span class="icon">◒</span> Contact</a>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="hero-section" style="background-image: url('img/bg/bg-hero.png');">
+        <div class="hero-overlay"></div>
+        <div class="hero-orb bg-white" style="width:300px;height:300px;top:5%;left:-8%;"></div>
+        <div class="hero-orb bg-zinc-300" style="width:240px;height:240px;bottom:5%;right:-6%;animation-delay:3s;"></div>
+        <div class="hero-content scroll-fade">
+            <span class="hero-greeting">hi, im</span>
+            <h1 class="hero-name" data-i18n="home_name">Pajar Ramdani</h1>
+            <p class="hero-desc" data-i18n="home_overview">An 11th-grade student majoring in Software Programming at SMK Amaliah 1 & 2 Ciawi, Bogor.</p>
+            <div class="hero-buttons">
+                <a href="storage/cv/1783331539_CV - Pajar Ramdani.pdf" target="_blank" class="btn-cv">Download CV</a>
+                <a href="#contact" class="btn-contact">Contact me</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section" style="background-image: url('img/bg/about-bg.jpg');">
+        <div class="about-overlay"></div>
+        <div class="about-container">
+            <h2 class="section-title scroll-fade" data-i18n="about_title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image scroll-fade" style="transition-delay: 150ms;">
+                    <img src="storage/profile/1783331565_WhatsApp Image 2026-03-10 at 17.02.48.jpeg" alt="Profile">
+                </div>
+                <div class="about-text scroll-fade" style="transition-delay: 300ms;">
+                    <p data-i18n="about_box1">An 11th grade student majoring in Software Engineering at SMK Amaliah 1 & 2 Ciawi, Bogor, currently interning at Wan Teknologi — a professional website development company.</p>
+                    <p data-i18n="about_box2">Has a great interest in web development (both frontend and backend) and graphic design. Believes that a good web application must not only function optimally.</p>
+                    <p data-i18n="about_box3">Every work is approached with a learn-while-doing spirit — focusing on clean code, mature design, and good user experience. Always curious, always building...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills-section" style="background-image: url('img/bg/skill-bg.jpg');">
+        <div class="skills-overlay"></div>
+        <div class="skills-container">
+            <h2 class="section-title scroll-fade" data-i18n="skills_title">Skills</h2>
+            <p class="section-subtitle scroll-fade" style="transition-delay: 150ms;" data-i18n="skills_subtitle">Here are some of the core skills I've developed in web development and design.</p>
+            <div class="skills-grid">
+                <div class="skill-card scroll-fade" style="transition-delay: 120ms;">
+                    <h3 data-i18n="skills_card1_title">Frontend Development</h3>
+                    <p data-i18n="skills_card1_desc">Understanding HTML5, CSS3, and Tailwind CSS, as well as the fundamentals of JavaScript and React.js, to build responsive and polished interfaces.</p>
+                </div>
+                <div class="skill-card scroll-fade" style="transition-delay: 240ms;">
+                    <h3 data-i18n="skills_card2_title">UI/UX &amp; Graphic Design</h3>
+                    <p data-i18n="skills_card2_desc">This is the area I excel in and enjoy the most. I design clean, modern, and user-friendly interfaces—handling everything from wireframes, color palettes, and typography to visual elements like icons and illustrations. I use Figma for prototyping, along with Adobe Illustrator and Photoshop for graphic design. I believe that good design goes beyond aesthetics; it is also about the user's comfort and experience when interacting with the product.</p>
+                </div>
+                <div class="skill-card scroll-fade" style="transition-delay: 360ms;">
+                    <h3 data-i18n="skills_card3_title">Backend &amp; Database</h3>
+                    <p data-i18n="skills_card3_desc">Getting to know Native PHP, Laravel, and MySQL to build simple CRUD features and connect the database to the frontend.</p>
+                </div>
+            </div>
+
+            <!-- MARQUEE TOOLS -->
+            <div class="tools-section scroll-fade" style="transition-delay: 100ms;">
+                <h3 class="tools-title">Tools</h3>
+                <p class="tools-sub">Hover to pause · Drag to scroll</p>
+                <div class="marquee-wrapper" id="marqueeWrapper">
+                    <div class="marquee-track" id="marqueeTrack"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="education-section" style="background-image: url('img/bg/education-bg.jpg');">
+        <div class="education-overlay"></div>
+        <div class="education-container">
+            <h2 class="section-title scroll-fade" data-i18n="education_title">Education</h2>
+            <p class="section-subtitle scroll-fade" style="transition-delay: 150ms;" data-i18n="education_subtitle">My academic journey from elementary school to vocational school.</p>
+            <div class="education-grid">
+                <div class="edu-card scroll-fade" style="transition-delay: 150ms;">
+                    <span class="edu-period" data-i18n="edu1_period">2024 - PRESENT</span>
+                    <h3 class="edu-school" data-i18n="edu1_school">SMK Amaliah 1&amp;2 Ciawi Bogor</h3>
+                    <p class="edu-desc" data-i18n="edu1_desc">Software and Game Development (PPLG) major. Focuses on web development, UI/UX design, and database management. Currently completing an internship at Wan Teknologi.</p>
+                    <div class="edu-logo"><img src="storage/education/1783331370_card1_images (2).png" alt="Logo"></div>
+                </div>
+                <div class="edu-card scroll-fade" style="transition-delay: 300ms;">
+                    <span class="edu-period" data-i18n="edu2_period">2021 - 2024</span>
+                    <h3 class="edu-school" data-i18n="edu2_school">SMP Amaliah Ciawi Bogor</h3>
+                    <p class="edu-desc" data-i18n="edu2_desc">Started actively learning the fundamentals of computers and information technology. Cultivated a strong curiosity about technological advancements.</p>
+                    <div class="edu-logo"><img src="storage/education/1783331370_card2_images (1).png" alt="Logo"></div>
+                </div>
+                <div class="edu-card scroll-fade" style="transition-delay: 450ms;">
+                    <span class="edu-period" data-i18n="edu3_period">2015 - 2021</span>
+                    <h3 class="edu-school" data-i18n="edu3_school">SDN Harjasari 1 Bogor</h3>
+                    <p class="edu-desc" data-i18n="edu3_desc">The early stage of pursuing knowledge and building foundational character. Learning to understand the social environment and practicing discipline in daily routines.</p>
+                    <div class="edu-logo"><img src="storage/education/1783329257_card3_images.png" alt="Logo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section" style="background-image: url('img/bg/project-bg.jpg');">
+        <div class="projects-overlay"></div>
+        <div class="projects-container">
+            <h2 class="section-title scroll-fade" data-i18n="projects_title">Selected Work</h2>
+            <p class="section-subtitle scroll-fade" style="transition-delay: 150ms;" data-i18n="projects_subtitle">Some software development projects I have worked on.</p>
+            <div class="projects-list" id="projectsList"></div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section" style="background-image: url('img/bg/contact-bg.jpg');">
+        <div class="contact-overlay"></div>
+        <div class="contact-container">
+            <div class="contact-header">
+                <span class="contact-label scroll-fade" data-i18n="contact_label">Get In Touch</span>
+                <h2 class="section-title scroll-fade" data-i18n="contact_title">Let's Connect</h2>
+                <p class="contact-desc scroll-fade" style="transition-delay: 200ms;" data-i18n="contact_desc">Interested in collaborating or just have a question? Reach out via the platforms below or send a message!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-social scroll-fade" id="contactSocial"></div>
+                <div class="contact-form-wrapper scroll-fade" style="transition-delay: 300ms;">
+                    <h3 class="form-title" data-i18n="form_title">Send Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div>
+                            <label class="form-label" data-i18n="form_name">Full Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Enter your name" required>
+                        </div>
+                        <div>
+                            <label class="form-label" data-i18n="form_email">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+                        </div>
+                        <div>
+                            <label class="form-label" data-i18n="form_subject">Subject</label>
+                            <input type="text" id="subject" class="form-input" placeholder="Enter subject" required>
+                        </div>
+                        <div>
+                            <label class="form-label" data-i18n="form_message">Message</label>
+                            <textarea id="message" class="form-input form-textarea" placeholder="Write your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                            </svg>
+                            <span data-i18n="form_submit">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 <strong>Pajar Ramdani</strong>. All Rights Reserved.</p>
+    </footer>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/6283178515728?text=Halo%20Pajar%2C%20saya%20tertarik%20dengan%20portfolio%20Anda" 
+       target="_blank" 
+       class="floating-wa">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="wa-icon">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+    </a>
+
+    <!-- NOTIFICATION -->
+    <div class="notification-overlay" id="notificationOverlay">
+        <div class="notification-card" id="notificationCard">
+            <div class="notification-icon" id="notificationIcon">✓</div>
+            <div class="notification-title" id="notificationTitle">Success</div>
+            <div class="notification-message" id="notificationMessage">Message sent successfully!</div>
+            <button class="notification-close" id="notificationClose">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
